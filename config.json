@@ -1,0 +1,42 @@
+{
+  "name": "Shairport Sync",
+  "version": "dev",
+  "slug": "shairport_sync",
+  "description": "Shairport Sync for Hass.io",
+  "url": "https://maido.io",
+  "startup": "application",
+  "arch": [
+    "aarch64",
+    "amd64",
+    "armhf",
+    "i386"
+  ],
+  "boot": "auto",
+  "hassio_api": true,
+  "homeassistant_api": true,
+  "host_network": true,
+  "hassio_role": "default",
+  "privileged": [],
+  "audio": true,
+  "map": [
+    "config:rw"
+  ],
+  "options": {
+    "log_level": "info",
+    "avahi_interfaces": "",
+    "avahi_hostname": "",
+    "avahi_domainname": "local",
+    "enable_ipv6": true
+  },
+  "schema": {
+    "log_level": "match(^(trace|debug|info|notice|warning|error|fatal)$)",
+    "avahi_interfaces": "str",
+    "avahi_hostname": "str",
+    "avahi_domainname": "str",
+    "enable_ipv6": "bool"
+  },
+  "environment": {
+    "LOG_FORMAT": "{LEVEL}: {MESSAGE}"
+  }
+}
+
