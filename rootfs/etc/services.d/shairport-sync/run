@@ -1,0 +1,24 @@
+#!/usr/bin/with-contenv bash
+# ==============================================================================
+# Community Hass.io Add-ons: Shairport Sync
+# Starts the Shairport Sync service
+# ==============================================================================
+# shellcheck disable=SC1091
+source /usr/lib/hassio-addons/base.sh
+
+# Wait for Avahi to become available
+s6-svwait -u -t 5000 /var/run/s6/services/avahi
+
+# Wait at least 5 seconds before starting
+# Avahi might need some time.
+sleep 5
+
+declare airplay_name
+
+if hass.config.has_value 'airplay_name'; then
+    airplay_name=$(hass.config.get 'airplay_name')
+else
+    airplay_name=$(hass.api.host.info.hostname)
+fi
+
+exec shairport-sync -m avahi -a "$airplay_name"
