@@ -13,4 +13,12 @@ s6-svwait -u -t 5000 /var/run/s6/services/avahi
 # Avahi might need some time.
 sleep 5
 
-exec shairport-sync -m avahi -a "$AIRPLAY_NAME"
+declare airplay_name
+
+if hass.config.has_value 'airplay_name'; then
+    airplay_name=$(hass.config.get 'airplay_name')
+else
+    airplay_name=$(hass.api.host.info.hostname)
+fi
+
+exec shairport-sync -m avahi -a "$airplay_name"
