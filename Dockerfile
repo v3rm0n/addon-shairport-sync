@@ -64,8 +64,6 @@ RUN apk -U add \
 # Copy root filesystem
 COPY rootfs /
 
-ENV AIRPLAY_NAME Docker
-
 # Build arguments
 ARG BUILD_ARCH
 ARG BUILD_DATE
