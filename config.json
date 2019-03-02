@@ -39,6 +39,7 @@
   },
   "environment": {
     "LOG_FORMAT": "{LEVEL}: {MESSAGE}"
-  }
+  },
+  "image": "maidok/shairport-sync"
 }
 
