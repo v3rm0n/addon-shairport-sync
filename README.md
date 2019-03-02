@@ -1,5 +1,7 @@
 # Shairport Sync addon for Home Assistant
 
+[![GitHub Release][releases-shield]][releases]
+
 Enables Airplay audio streaming to Home Assistant.
 
 ## Docker status
@@ -21,3 +23,5 @@ Enables Airplay audio streaming to Home Assistant.
 [microbadger]: https://microbadger.com/images/maidok/shairport-sync
 [pulls-shield]: https://img.shields.io/docker/pulls/maidok/shairport-sync.svg
 [layers-shield]: https://images.microbadger.com/badges/image/maidok/shairport-sync.svg
+[releases-shield]: https://img.shields.io/github/release/v3rm0n/addon-shairport-sync.svg
+[releases]: https://github.com/v3rm0n/addon-shairport-sync/releases
