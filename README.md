@@ -27,6 +27,7 @@ Enables Airplay audio streaming to Home Assistant.
 [![Docker Layers][i386-layers-shield]][i386-microbadger]
 [![Docker Pulls][i386-pulls-shield]][i386-dockerhub]
 
+[license-shield]: https://img.shields.io/github/license/v3rm0n/addon-shaiport-sync.svg
 [aarch64-arch-shield]: https://img.shields.io/badge/architecture-aarch64-blue.svg
 [aarch64-dockerhub]: https://hub.docker.com/r/maidok/shairport-sync-aarch64
 [aarch64-layers-shield]: https://images.microbadger.com/badges/image/maidok/shairport-sync-aarch64.svg
