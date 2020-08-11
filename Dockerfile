@@ -49,6 +49,7 @@ RUN apk -U add \
  && apk add \
         dbus \
         alsa-lib \
+        alsa-plugins-pulse \
         libdaemon \
         popt \
         libressl \
