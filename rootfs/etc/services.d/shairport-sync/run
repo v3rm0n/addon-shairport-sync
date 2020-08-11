@@ -18,7 +18,7 @@ declare airplay_name
 if bashio::config.has_value 'airplay_name'; then
     airplay_name=$(bashio::config 'airplay_name')
 else
-    airplay_name=$(bashio::api.host.info.hostname)
+    airplay_name=$(bashio::info.hostname)
 fi
 
 exec shairport-sync -m avahi -a "$airplay_name"
