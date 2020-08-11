@@ -7,4 +7,4 @@
 
 
 exec dbus-daemon --system --nofork \
-  || bashio::die 'Failed to start D-Bus daemon'
+  || bashio::exit.nok 'Failed to start D-Bus daemon'
