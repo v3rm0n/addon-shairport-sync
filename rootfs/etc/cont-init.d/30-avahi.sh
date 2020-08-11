@@ -26,7 +26,7 @@ sed -i "s/#allow-interfaces=.*/allow-interfaces=hassio,${interfaces}/" \
 if bashio::config.has_value 'avahi_hostname'; then
     hostname=$(bashio::config 'avahi_hostname')
 else
-    hostname=$(bashio::api.host.info.hostname)
+    hostname=$(bashio::info.hostname)
     bashio::log.debug "Detected Avahi hostname: ${hostname}"
 fi
 sed -i "s/host-name=.*/host-name=${hostname}/" "${AVAHI_CONFIG}"
