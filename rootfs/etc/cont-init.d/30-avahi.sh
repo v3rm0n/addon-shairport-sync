@@ -11,7 +11,6 @@ declare hostname
 
 # Determine interface to use for Avahi
 if bashio::config.has_value 'avahi_interfaces'; then
-    bashio::exit.nok 'Testing output'
     interfaces=$(bashio::config 'avahi_interfaces')
 else
     interfaces=$(ip route show default \
