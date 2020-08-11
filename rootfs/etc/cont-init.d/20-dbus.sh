@@ -5,4 +5,4 @@
 # ==============================================================================
 # shellcheck disable=SC1091
 
-dbus-uuidgen --ensure || hass.die 'Failed to generate a unique D-Bus ID'
+dbus-uuidgen --ensure || bashio::die 'Failed to generate a unique D-Bus ID'
