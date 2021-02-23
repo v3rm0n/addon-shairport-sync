@@ -20,7 +20,8 @@
   "privileged": [],
   "audio": true,
   "map": [
-    "config:rw"
+    "config:rw",
+    "share:rw"
   ],
   "options": {
     "log_level": "info",
