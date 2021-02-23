@@ -20,7 +20,7 @@ RUN apk -U add \
         avahi-dev \
         libconfig-dev \
  && cd /root \
- && git clone https://github.com/mikebrady/shairport-sync.git \
+ && git clone https://github.com/dadge/addon-shairport-sync.git \
  && cd shairport-sync \
  && autoreconf -i -f \
  && ./configure \
@@ -78,4 +78,4 @@ LABEL \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION} \
-    maintainer="Maido Käära <m@maido.io>"
+    maintainer="Dadge"
