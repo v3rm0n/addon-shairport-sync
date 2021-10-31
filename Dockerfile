@@ -22,6 +22,7 @@ RUN apk -U add \
  && cd /root \
  && git clone https://github.com/mikebrady/shairport-sync.git \
  && cd shairport-sync \
+ && git checkout development \
  && autoreconf -i -f \
  && ./configure \
         --with-alsa \
