@@ -1,6 +1,6 @@
 {
   "name": "Shairport Sync",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "slug": "shairport_sync",
   "description": "Shairport Sync for Hass.io",
   "url": "https://github.com/v3rm0n/addon-shairport-sync",
@@ -41,7 +41,5 @@
   },
   "environment": {
     "LOG_FORMAT": "{LEVEL}: {MESSAGE}"
-  },
-  "image": "maidok/{arch}-addon-shairport-sync"
+  }
 }
-
